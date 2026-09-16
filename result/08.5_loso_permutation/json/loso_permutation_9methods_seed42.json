@@ -1,0 +1,79 @@
+{
+  "seed": 42,
+  "n_permutations": 1000,
+  "n_bootstrap": 2000,
+  "n_method_compare_perm": 10000,
+  "methods": {
+    "raw": {
+      "observed_pooled_auc": 0.5434722222222222,
+      "permutation_p": 0.05194805194805195,
+      "significance": "n.s.",
+      "null_auc_mean": 0.4851483333333333,
+      "null_auc_std": 0.0402876800195427
+    },
+    "bandpass": {
+      "observed_pooled_auc": 0.5567881944444444,
+      "permutation_p": 0.016983016983016984,
+      "significance": "*",
+      "null_auc_mean": 0.48405135416666667,
+      "null_auc_std": 0.04233379021287102
+    },
+    "glm": {
+      "observed_pooled_auc": 0.5144791666666666,
+      "permutation_p": 0.1108891108891109,
+      "significance": "n.s.",
+      "null_auc_mean": 0.4497428298611111,
+      "null_auc_std": 0.05626936856835598
+    },
+    "ica": {
+      "observed_pooled_auc": 0.5927777777777777,
+      "permutation_p": 0.000999000999000999,
+      "significance": "***",
+      "null_auc_mean": 0.4790886805555556,
+      "null_auc_std": 0.040091404188974854
+    },
+    "pca": {
+      "observed_pooled_auc": 0.5735069444444444,
+      "permutation_p": 0.005994005994005994,
+      "significance": "**",
+      "null_auc_mean": 0.4823968229166667,
+      "null_auc_std": 0.04107681248662944
+    },
+    "wavelet": {
+      "observed_pooled_auc": 0.6089409722222223,
+      "permutation_p": 0.000999000999000999,
+      "significance": "***",
+      "null_auc_mean": 0.4805840277777778,
+      "null_auc_std": 0.042061530948195626
+    },
+    "ssa": {
+      "observed_pooled_auc": 0.5748263888888888,
+      "permutation_p": 0.004995004995004995,
+      "significance": "**",
+      "null_auc_mean": 0.48361305555555556,
+      "null_auc_std": 0.040033060231956956
+    },
+    "emd": {
+      "observed_pooled_auc": 0.5331944444444444,
+      "permutation_p": 0.08791208791208792,
+      "significance": "n.s.",
+      "null_auc_mean": 0.4818349479166667,
+      "null_auc_std": 0.041308128041387324
+    },
+    "pihd": {
+      "observed_pooled_auc": 0.6287847222222223,
+      "permutation_p": 0.000999000999000999,
+      "significance": "***",
+      "null_auc_mean": 0.47911616319444444,
+      "null_auc_std": 0.04155066469699193
+    }
+  },
+  "pihd_vs_wavelet": {
+    "pihd_pooled_auc": 0.6287847222222223,
+    "wavelet_pooled_auc": 0.6089409722222223,
+    "delta_auc": 0.019843749999999938,
+    "ci95_low": -0.026459201388888808,
+    "ci95_high": 0.06443663194444442,
+    "paired_prediction_swap_p": 0.39936006399360063
+  }
+}

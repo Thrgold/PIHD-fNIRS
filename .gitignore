@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.vscode/
+results/
+output/
+tmp/
+*_checkpoint.npy
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+# Human-participant data: confirm redistribution rights before force-adding.
+data/**/*.npy
+data/*.npy
+data/**/*.mat
+data/

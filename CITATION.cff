@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated manuscript."
+title: "PIHD: Physics-Informed Hemodynamic Decomposition for fNIRS"
+type: software
+authors:
+  - family-names: Shen
+    given-names: Xin
+  - family-names: Qiu
+    given-names: Wantong
+  - family-names: Wu
+    given-names: Xuecheng
+  - family-names: Li
+    given-names: Wenhao
+  - family-names: Zeng
+    given-names: Ziyun
+  - family-names: Wu
+    given-names: Kai
+repository-code: "https://github.com/Thrgold/PIHD-fNIRS"
+license: MIT

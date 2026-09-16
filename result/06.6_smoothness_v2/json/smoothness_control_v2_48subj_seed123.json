@@ -1,0 +1,42 @@
+{
+  "seed": 123,
+  "n_subjects": 48,
+  "n_trials": 480,
+  "control": "mean((d2 h / dt2)^2), replacing L_ode",
+  "weight_matching": {
+    "method": "Exact total gradient-norm match to L_ode over FVQNet, FinNet, tau, and epsilon; first valid Stage-2 epoch in [20, 100]",
+    "matched_fraction": 1.0,
+    "lambda_median": 187548.484375,
+    "lambda_iqr": [
+      84710.9296875,
+      559464.9375
+    ],
+    "match_epoch_range": [
+      20,
+      20
+    ],
+    "maximum_relative_error": 5.891445734166614e-08,
+    "coefficient_clipping": false
+  },
+  "smoothness_control": {
+    "me_dz": -0.23469158083748157,
+    "mi_dz": -0.25551416209138816,
+    "me_p_raw": 0.11063899475894635,
+    "mi_p_raw": 0.08317101078482189,
+    "trial_cv_auc": 0.5766276041666666,
+    "pooled_loso_auc": 0.5710416666666667,
+    "pooled_loso_accuracy": 0.56875,
+    "label_permutation_p": 0.002997002997002997
+  },
+  "full_pihd": {
+    "pooled_loso_auc": 0.628125
+  },
+  "full_minus_smoothness": {
+    "delta_auc": 0.057083333333333375,
+    "ci95": [
+      -0.005628472222222104,
+      0.12406380208333329
+    ],
+    "paired_swap_p_two_sided": 0.09099090090990901
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "seed": 999,
+  "n_subjects": 48,
+  "n_trials": 480,
+  "loso_statistic": "pooled AUC from concatenated held-out predictions",
+  "activation_contrast": {
+    "ME": "mean(8-16s) - mean(2-7s)",
+    "MI": "mean(24-32s) - mean(17-23s)"
+  },
+  "results": {
+    "Full PIHD": {
+      "me_dz": 1.124405860900879,
+      "mi_dz": 1.2907767295837402,
+      "me_p_raw": 5.248871848791692e-10,
+      "mi_p_raw": 1.0374747870775649e-11,
+      "me_p_bonferroni_6": 3.149323109275015e-09,
+      "mi_p_bonferroni_6": 6.22484872246539e-11,
+      "trial_cv_auc": 0.6388802083333334,
+      "trial_cv_accuracy": 0.586875,
+      "trial_cv_f1": 0.5299588803642358,
+      "pooled_loso_auc": 0.6357812500000001,
+      "pooled_loso_accuracy": 0.5958333333333333
+    },
+    "w/o L_ode": {
+      "me_dz": -0.04888065159320831,
+      "mi_dz": -0.08725858479738235,
+      "me_p_raw": 0.7363779099253762,
+      "mi_p_raw": 0.548388763259443,
+      "me_p_bonferroni_6": 1.0,
+      "mi_p_bonferroni_6": 1.0,
+      "trial_cv_auc": 0.5647786458333334,
+      "trial_cv_accuracy": 0.5544791666666667,
+      "trial_cv_f1": 0.475564379271759,
+      "pooled_loso_auc": 0.5526909722222222,
+      "pooled_loso_accuracy": 0.5458333333333333
+    },
+    "w/o Stage 1": {
+      "me_dz": 0.06323177367448807,
+      "mi_dz": 0.6848218441009521,
+      "me_p_raw": 0.6633333048832648,
+      "mi_p_raw": 1.9839219175930044e-05,
+      "me_p_bonferroni_6": 1.0,
+      "mi_p_bonferroni_6": 0.00011903531505558026,
+      "trial_cv_auc": 0.6118098958333332,
+      "trial_cv_accuracy": 0.5847916666666667,
+      "trial_cv_f1": 0.5258315571419587,
+      "pooled_loso_auc": 0.5994965277777777,
+      "pooled_loso_accuracy": 0.5875
+    }
+  }
+}

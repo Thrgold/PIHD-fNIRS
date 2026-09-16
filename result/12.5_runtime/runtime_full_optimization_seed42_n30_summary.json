@@ -1,0 +1,46 @@
+{
+  "benchmark_name": "complete_offline_pihd_per_trial_optimization",
+  "interpretation": "Complete noncausal offline trial-specific optimization time; not trained-network forward inference latency.",
+  "source_implementation": "src/2_real_data_decomposition.py",
+  "configuration": {
+    "seed": 42,
+    "n_subjects": 48,
+    "cohort_trials": 480,
+    "n_points": 80,
+    "stage1_epochs": 400,
+    "stage2_epochs": 800,
+    "learning_rate": 0.002,
+    "n_warmup": 2,
+    "n_measured": 30
+  },
+  "hardware": {
+    "platform": "Windows 11",
+    "python_version": "3.13.1",
+    "numpy_version": "2.2.1",
+    "scipy_version": "1.15.2",
+    "torch_version": "2.6.0+cu124",
+    "device": "cuda",
+    "cuda_version": "12.4",
+    "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "gpu_memory_gib": 7.99560546875
+  },
+  "optimization_seconds": {
+    "n": 30,
+    "mean": 12.105695926669675,
+    "sd": 0.8689104612276798,
+    "median": 12.039057249989128,
+    "min": 11.023448200023267,
+    "max": 13.662179699982516,
+    "mean_ci95_t": [11.781239428153949, 12.430152425185401]
+  },
+  "end_to_end_seconds": {
+    "n": 30,
+    "mean": 12.105851376665912,
+    "sd": 0.8689254357554804,
+    "median": 12.039188049995573,
+    "min": 11.023561000009067,
+    "max": 13.662325399986003,
+    "mean_ci95_t": [11.78138928656961, 12.430313466762215]
+  },
+  "privacy_note": "Host name, local paths, participant identifiers, and per-trial records were omitted from the public summary. Aggregate values are unchanged."
+}
